@@ -225,8 +225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaceOnPlane
   raycastManager: {fileID: 1833995198}
   planeManager: {fileID: 1833995197}
-  horizontalModelPrefab: {fileID: 919132149155446097, guid: 1fe10cb3f554cde4bb935963aa2ab241, type: 3}
-  verticalModelPrefab: {fileID: 919132149155446097, guid: 7fea0e2d06d3738468742096e60e847f, type: 3}
+  horizontalModelPrefab: {fileID: 2487536814889003365, guid: 005986751426529468885e66080fa0e2, type: 3}
+  verticalModelPrefab: {fileID: 6548581042508146233, guid: d51fff9a2b03a68489a0ea0334cb7c55, type: 3}
 --- !u!4 &182818150
 Transform:
   m_ObjectHideFlags: 0
