@@ -202,6 +202,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImageTrackingManager
   imageManager: {fileID: 1376528617}
+--- !u!1 &1483791646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483791648}
+  - component: {fileID: 1483791647}
+  m_Layer: 0
+  m_Name: MultipleImageTRacking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1483791647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483791646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c6c87729546e5428b1230c2d8aef77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultipleImageTracking_E
+  imageManager: {fileID: 1376528617}
+  imagePrefabs:
+  - imageName: Teddy
+    imagePrefab: {fileID: 0}
+  - imageName: Peak
+    imagePrefab: {fileID: 0}
+  - imageName: GhibliFood
+    imagePrefab: {fileID: 0}
+--- !u!4 &1483791648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483791646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 255.92593, y: 0.00003, z: 7793.0005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770946016
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,3 +802,4 @@ SceneRoots:
   - {fileID: 1962014456}
   - {fileID: 1376528619}
   - {fileID: 1781575033}
+  - {fileID: 1483791648}
