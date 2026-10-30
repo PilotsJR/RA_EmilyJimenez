@@ -484,6 +484,7 @@ MonoBehaviour:
   arCamera: {fileID: 1960662556}
   selectedModelText: {fileID: 911214966}
   maxRayDistance: 200
+  debugMode: 1
 --- !u!4 &1483791648
 Transform:
   m_ObjectHideFlags: 0
