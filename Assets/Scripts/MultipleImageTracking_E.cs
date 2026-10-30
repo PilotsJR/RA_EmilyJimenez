@@ -22,7 +22,10 @@ public class MultipleImageTracking_E : MonoBehaviour
     [Header("Selección / UI")]
     [SerializeField] private Camera arCamera;
     [SerializeField] private TMP_Text selectedModelText;
-    [SerializeField] private float maxRayDistance = 20f;
+    [SerializeField] private float maxRayDistance = 100f;
+
+    [Header("Depuración")]
+    [SerializeField] private bool debugMode = true;
 
     private readonly Dictionary<TrackableId, GameObject> spawnedObjects = new();
     private GameObject selectedModel;
@@ -101,30 +104,53 @@ public class MultipleImageTracking_E : MonoBehaviour
         }
     }
 
+
     private void HandleTouchSelection()
     {
+        Vector2 screenPos;
+
         var touchscreen = Touchscreen.current;
-        if (touchscreen == null) return;
+        if (touchscreen != null && touchscreen.primaryTouch.press.wasPressedThisFrame)
+            screenPos = touchscreen.primaryTouch.position.ReadValue();
+        else if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+            screenPos = Mouse.current.position.ReadValue();
+        else
+            return;
 
-        var touch = touchscreen.primaryTouch;
-        if (!touch.press.wasPressedThisFrame) return;
-
-        Vector2 screenPos = touch.position.ReadValue();
-        Ray ray = arCamera.ScreenPointToRay(screenPos);
-
-        if (Physics.Raycast(ray, out RaycastHit hit, maxRayDistance))
+        if (arCamera == null)
         {
-            var info = hit.collider.GetComponentInParent<ModelInfo>();
+            if (selectedModelText != null) selectedModelText.text = "DEBUG: arCamera es null";
+            return;
+        }
+
+        Ray ray = arCamera.ScreenPointToRay(screenPos);
+        RaycastHit[] hits = Physics.RaycastAll(ray, maxRayDistance);
+        Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
+
+        if (debugMode && selectedModelText != null)
+        {
+            string debug = $"DEBUG toque en {screenPos} | golpes: {hits.Length}";
+            foreach (var h in hits)
+            {
+                bool tieneInfo = h.collider.GetComponentInParent<ModelInfo>() != null;
+                debug += $"\n{h.collider.name} ({(tieneInfo ? "OK" : "sin ModelInfo")})";
+            }
+            selectedModelText.text = debug;
+        }
+
+        foreach (var h in hits)
+        {
+            var info = h.collider.GetComponentInParent<ModelInfo>();
             if (info != null)
             {
                 selectedModel = info.gameObject;
-                UpdateSelectionUI(info.displayName);
+                if (!debugMode) UpdateSelectionUI(info.displayName);
                 return;
             }
         }
 
         selectedModel = null;
-        UpdateSelectionUI(null);
+        if (!debugMode) UpdateSelectionUI(null);
     }
 
     private void UpdateSelectionUI(string modelName)
