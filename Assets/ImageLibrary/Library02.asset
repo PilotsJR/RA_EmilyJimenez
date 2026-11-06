@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Library02
+  m_EditorClassIdentifier: Unity.XR.ARSubsystems::UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
+  m_GuidLow: 4750898902879793977
+  m_GuidHigh: 15475033064050567069
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5134370298989047337
+      m_GuidHigh: 1785149197242237829
+    m_SerializedTextureGuid:
+      m_GuidLow: 17042788544415840930
+      m_GuidHigh: 8854320982642289851
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Pikachu
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5663486602512362752
+      m_GuidHigh: 14080321690645214371
+    m_SerializedTextureGuid:
+      m_GuidLow: 16777200009745653638
+      m_GuidHigh: 13980508572287893451
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Bulbasaur
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5528930144714071284
+      m_GuidHigh: 8642147169219736505
+    m_SerializedTextureGuid:
+      m_GuidLow: 4342772516764706916
+      m_GuidHigh: 7046453766018435624
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Piplup
+    m_Texture: {fileID: 0}
