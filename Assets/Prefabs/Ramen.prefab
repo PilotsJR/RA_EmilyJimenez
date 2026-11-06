@@ -1522,4 +1522,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdd855932ac7e6409002bc594bf8185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModelInfoo
-  modelName: Ramen
+  modelData: {fileID: 11400000, guid: 850d9665843a7cd41958fac4c845a6b1, type: 2}

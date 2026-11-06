@@ -977,7 +977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdd855932ac7e6409002bc594bf8185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModelInfoo
-  modelName: BingBong
+  modelData: {fileID: 11400000, guid: dc34a11b590dcf942986ff77cfa6b294, type: 2}
 --- !u!1 &8626094318504601562
 GameObject:
   m_ObjectHideFlags: 0

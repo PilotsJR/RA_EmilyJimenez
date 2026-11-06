@@ -1838,7 +1838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdd855932ac7e6409002bc594bf8185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModelInfoo
-  modelName: Teddy
+  modelData: {fileID: 11400000, guid: 07a328c4b0badf44d83f8c9a35784640, type: 2}
 --- !u!1 &7586500177224196561
 GameObject:
   m_ObjectHideFlags: 0
