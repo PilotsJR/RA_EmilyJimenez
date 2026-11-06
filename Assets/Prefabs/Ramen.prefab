@@ -1450,6 +1450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7329180897028567059}
   - component: {fileID: 7733697064421735641}
+  - component: {fileID: 7884688537559894117}
   m_Layer: 0
   m_Name: Ramen
   m_TagString: Untagged
@@ -1509,3 +1510,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 31.650997, y: 13.954437, z: 31.911493}
   m_Center: {x: 0.9446322, y: 5.593515, z: 0.37186763}
+--- !u!114 &7884688537559894117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114925247970487529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdd855932ac7e6409002bc594bf8185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ModelInfoo
+  modelName: Ramen

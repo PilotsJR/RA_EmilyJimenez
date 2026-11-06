@@ -25,9 +25,14 @@ public class ModelRaycastt : MonoBehaviour
             Ray ray = arCamera.ScreenPointToRay(touch.screenPosition);
             if(Physics.Raycast(ray, out RaycastHit hit))
             {
-                GameObject selectedObject = hit.collider.gameObject;
-
-                modelName.text = selectedObject.name;
+                ModelInfoo modelInfo = hit.collider.GetComponent<ModelInfoo>();
+                if (modelInfo != null)
+                {
+                    modelName.text = modelInfo.ModelName;
+                    //modelInfo.SetModelName = "Pan";
+                    //modelInfo.SelectedModelName = "Bolillo";
+                    //modelInfo.SetNewModelName("Concha");
+                }
             }
         }
     }

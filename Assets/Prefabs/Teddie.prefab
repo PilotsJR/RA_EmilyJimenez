@@ -1777,6 +1777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7313442026603251846}
   - component: {fileID: 5554237487871280878}
+  - component: {fileID: -5280965116124547200}
   m_Layer: 0
   m_Name: Teddie
   m_TagString: Untagged
@@ -1825,6 +1826,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 166.80855, y: 163.51427, z: 143.7825}
   m_Center: {x: 4.1317906, y: 79.297646, z: 3.3386075}
+--- !u!114 &-5280965116124547200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099819691557990962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdd855932ac7e6409002bc594bf8185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ModelInfoo
+  modelName: Teddy
 --- !u!1 &7586500177224196561
 GameObject:
   m_ObjectHideFlags: 0

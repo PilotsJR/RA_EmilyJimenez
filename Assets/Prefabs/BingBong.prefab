@@ -910,6 +910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936947474931638521}
   - component: {fileID: 1862520639867979535}
+  - component: {fileID: 3025449960265746779}
   m_Layer: 0
   m_Name: BingBong
   m_TagString: Untagged
@@ -964,6 +965,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.2722445, y: 3.4890983, z: 2.4861083}
   m_Center: {x: -0.09492704, y: 1.8195179, z: -0.06301457}
+--- !u!114 &3025449960265746779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5643635449184879893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdd855932ac7e6409002bc594bf8185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ModelInfoo
+  modelName: BingBong
 --- !u!1 &8626094318504601562
 GameObject:
   m_ObjectHideFlags: 0
