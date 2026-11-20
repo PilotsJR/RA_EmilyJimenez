@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2834127774071491993}
   - component: {fileID: 6984808854728980664}
   - component: {fileID: 1663976633662266950}
+  - component: {fileID: -2755027781497215491}
   m_Layer: 0
   m_Name: ElectroSamachurl
   m_TagString: Untagged
@@ -92,6 +93,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.3743583, z: 0.73260117}
   m_Center: {x: 0, y: 0.6684967, z: -0.13369925}
+--- !u!114 &-2755027781497215491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425006655399927484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc16f950594f9945b173d1e57ef4c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ModeloInteractivo
+  tipo: 1
+  animator: {fileID: 2834127774071491993}
+  distanciaActivar: 0.15
+  distanciaDesactivar: 0.2
 --- !u!1 &824798788302010703
 GameObject:
   m_ObjectHideFlags: 0

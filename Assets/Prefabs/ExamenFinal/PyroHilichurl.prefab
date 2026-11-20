@@ -1149,6 +1149,7 @@ GameObject:
   - component: {fileID: 4086153586307184439}
   - component: {fileID: -2922848808598215116}
   - component: {fileID: 3317298708866282454}
+  - component: {fileID: -603108757887191183}
   m_Layer: 0
   m_Name: PyroHilichurl
   m_TagString: Untagged
@@ -1229,6 +1230,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.4181023, z: 0.7698086}
   m_Center: {x: -0, y: 0.7023171, z: 0.115095615}
+--- !u!114 &-603108757887191183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564635811893554541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc16f950594f9945b173d1e57ef4c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ModeloInteractivo
+  tipo: 2
+  animator: {fileID: 4086153586307184439}
+  distanciaActivar: 0.15
+  distanciaDesactivar: 0.2
 --- !u!1 &4662933733429815790
 GameObject:
   m_ObjectHideFlags: 0
