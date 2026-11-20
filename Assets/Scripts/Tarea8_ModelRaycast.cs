@@ -6,17 +6,17 @@ using UnityEngine.UI;
 public class Tarea8_ModelRaycast : MonoBehaviour
 {
     [SerializeField] private Camera arCamera;
-    [SerializeField] private GameObject banner;      // Panel/banner que contiene toda la info
-    [SerializeField] private Button closeButton;     // Botón de cerrar
+    [SerializeField] private GameObject banner;    
+    [SerializeField] private Button closeButton;  
     [SerializeField] private TMP_Text modelName;
     [SerializeField] private TMP_Text descriptionText;
     [SerializeField] private TMP_Text categoryText;
     [SerializeField] private TMP_Text levelText;
     [SerializeField] private Image iconImage;
+    [SerializeField] private AudioSource audioSource;
 
     private void Awake()
     {
-        // El banner empieza oculto
         banner.SetActive(false);
     }
 
@@ -39,7 +39,6 @@ public class Tarea8_ModelRaycast : MonoBehaviour
             if (!touch.began)
                 continue;
 
-            // Ignorar toques que caen sobre la UI (por ejemplo, el botón Close)
             if (UnityEngine.EventSystems.EventSystem.current != null &&
                 UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(touch.finger.index))
                 continue;
@@ -67,6 +66,9 @@ public class Tarea8_ModelRaycast : MonoBehaviour
         iconImage.sprite = data.icon;
 
         banner.SetActive(true);
+
+        if (audioSource != null && data.sound != null)
+            audioSource.PlayOneShot(data.sound);
 
         Debug.Log("Objeto seleccionado: " + data.name);
     }

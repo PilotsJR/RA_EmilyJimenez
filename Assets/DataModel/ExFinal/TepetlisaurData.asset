@@ -18,3 +18,4 @@ MonoBehaviour:
   category: 1
   level: 60
   icon: {fileID: 21300000, guid: 0e68d21f3c5b1444c8276a4cb3d71d4e, type: 3}
+  sound: {fileID: 8300000, guid: 918c062852ad6b949be94921a7fa9834, type: 3}

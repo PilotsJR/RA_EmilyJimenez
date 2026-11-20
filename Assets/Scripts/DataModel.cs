@@ -15,5 +15,6 @@ public class DataModel : ScriptableObject
     public string category;
     public int level;
     public Sprite icon;
+    public AudioClip sound;
     
 }
