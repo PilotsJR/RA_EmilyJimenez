@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 4973841691365069467}
   - component: {fileID: 2088659594452010231}
   - component: {fileID: -1844945224503833949}
+  - component: {fileID: 7638642481841881713}
   m_Layer: 0
   m_Name: CryoAbyssMage
   m_TagString: Untagged
@@ -552,6 +553,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InfoModel
   modelData: {fileID: 11400000, guid: 15a0c30992719bf40be850706878c007, type: 2}
+--- !u!65 &7638642481841881713
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569935233548413428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.8144923, z: 0.7837572}
+  m_Center: {x: -0, y: 0.89361095, z: 0.024573069}
 --- !u!1 &2616464286790920725
 GameObject:
   m_ObjectHideFlags: 0

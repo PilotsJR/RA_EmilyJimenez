@@ -520,6 +520,7 @@ GameObject:
   - component: {fileID: 5251421880758693976}
   - component: {fileID: 5306474890590589211}
   - component: {fileID: 875607789211486938}
+  - component: {fileID: 3019484143586170200}
   m_Layer: 0
   m_Name: Tepetlisaurus
   m_TagString: Untagged
@@ -580,6 +581,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InfoModel
   modelData: {fileID: 11400000, guid: d8d1fcfb86e4d5e48806cde744f6a0cf, type: 2}
+--- !u!65 &3019484143586170200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011236838944595605}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7434159, y: 1.2842162, z: 0.88458985}
+  m_Center: {x: 0.0019737333, y: 0.64343286, z: 0.018230725}
 --- !u!1 &2267302573626333754
 GameObject:
   m_ObjectHideFlags: 0
