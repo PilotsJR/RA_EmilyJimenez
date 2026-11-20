@@ -16,4 +16,44 @@ MonoBehaviour:
   m_GuidHigh: 10369269309675085737
   m_DataStore:
     m_Storage: []
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5453712646357001097
+      m_GuidHigh: 8599078656155900044
+    m_SerializedTextureGuid:
+      m_GuidLow: 11580029410768800820
+      m_GuidHigh: 16097173222886368793
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: CryoAbyssMage_Carta
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4758468916362981912
+      m_GuidHigh: 10362736507151490722
+    m_SerializedTextureGuid:
+      m_GuidLow: 11395360755238049054
+      m_GuidHigh: 1313140245253641001
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: PyroHilichurl_Carta
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4982678021031226153
+      m_GuidHigh: 15667756234273965226
+    m_SerializedTextureGuid:
+      m_GuidLow: 1739697626516953214
+      m_GuidHigh: 9974833435604275177
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Tepetlisaurus_Carta
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5465760591686476177
+      m_GuidHigh: 3038304741903864718
+    m_SerializedTextureGuid:
+      m_GuidLow: 8666166460458321384
+      m_GuidHigh: 10234926525175212249
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: ElectroSamachurlCarta
+    m_Texture: {fileID: 0}
