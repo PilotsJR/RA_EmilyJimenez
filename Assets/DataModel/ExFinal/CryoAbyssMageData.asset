@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2208975d87d06954a95e75968da25b84, type: 3}
+  m_Name: CryoAbyssMageData
+  m_EditorClassIdentifier: Assembly-CSharp::DataModel
+  modelName: Cryo Abyss Mage
+  description: A powerful mage who commands the freezing darkness of the abyss, engulfing
+    his enemies in deadly frost.
+  category: 4
+  level: 90
+  icon: {fileID: 21300000, guid: c0fc6ff1062149e48b67ecbb3e45cf8f, type: 3}

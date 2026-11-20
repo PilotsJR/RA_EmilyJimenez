@@ -1147,6 +1147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2995909560307619677}
   - component: {fileID: 4086153586307184439}
+  - component: {fileID: -2922848808598215116}
   m_Layer: 0
   m_Name: PyroHilichurl
   m_TagString: Untagged
@@ -1193,6 +1194,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-2922848808598215116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564635811893554541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567b45606944fc74a9b8f8874fe6c3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InfoModel
+  modelData: {fileID: 11400000, guid: 960be86e5418eef45a19c3bc4759eddc, type: 2}
 --- !u!1 &4662933733429815790
 GameObject:
   m_ObjectHideFlags: 0

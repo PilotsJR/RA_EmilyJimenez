@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6812226333963309911}
   - component: {fileID: 2834127774071491993}
+  - component: {fileID: 6984808854728980664}
   m_Layer: 0
   m_Name: ElectroSamachurl
   m_TagString: Untagged
@@ -56,6 +57,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6984808854728980664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425006655399927484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567b45606944fc74a9b8f8874fe6c3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InfoModel
+  modelData: {fileID: 11400000, guid: 3dd9787cb418f9a43b0058e1d2dd12a9, type: 2}
 --- !u!1 &824798788302010703
 GameObject:
   m_ObjectHideFlags: 0
