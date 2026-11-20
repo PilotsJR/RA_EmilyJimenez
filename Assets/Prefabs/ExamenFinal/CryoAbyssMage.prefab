@@ -492,6 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4973841691365069467}
   - component: {fileID: 2088659594452010231}
+  - component: {fileID: -1844945224503833949}
   m_Layer: 0
   m_Name: CryoAbyssMage
   m_TagString: Untagged
@@ -538,6 +539,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1844945224503833949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569935233548413428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567b45606944fc74a9b8f8874fe6c3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InfoModel
+  modelData: {fileID: 11400000, guid: 15a0c30992719bf40be850706878c007, type: 2}
 --- !u!1 &2616464286790920725
 GameObject:
   m_ObjectHideFlags: 0

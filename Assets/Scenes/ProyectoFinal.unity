@@ -506,7 +506,7 @@ MonoBehaviour:
     imagePrefab: {fileID: 425006655399927484, guid: b01718883e61bc94faa50903fa977828, type: 3}
   - imageName: Pyro Hilichurl
     imagePrefab: {fileID: 4564635811893554541, guid: 1a177dec6e3e367428cc0f99dbbe646c, type: 3}
-  - imageName: Tepetlisaur
+  - imageName: Tepetlisaurus
     imagePrefab: {fileID: 2011236838944595605, guid: 414ebf0447233904fbf820877010dce2, type: 3}
 --- !u!4 &335595553
 Transform:
@@ -2063,6 +2063,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947616708}
   m_CullTransparentMesh: 1
+--- !u!1 &1980016256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980016258}
+  - component: {fileID: 1980016257}
+  m_Layer: 0
+  m_Name: Raycast Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1980016257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980016256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1108d27bf4e069e439428d06d21be255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tarea8_ModelRaycast
+  arCamera: {fileID: 2146487784}
+  modelName: {fileID: 1729913692}
+  descriptionText: {fileID: 1339567638}
+  categoryText: {fileID: 1773820153}
+  levelText: {fileID: 1947616710}
+  iconImage: {fileID: 177833938}
+--- !u!4 &1980016258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980016256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 404.92972, y: 0.00002, z: -982.16614}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992975939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,3 +2411,4 @@ SceneRoots:
   - {fileID: 453079727}
   - {fileID: 221100152}
   - {fileID: 335595553}
+  - {fileID: 1980016258}
