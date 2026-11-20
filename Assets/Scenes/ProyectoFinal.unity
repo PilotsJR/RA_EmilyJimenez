@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1108d27bf4e069e439428d06d21be255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tarea8_ModelRaycast
-  arCamera: {fileID: 2146487784}
+  arCamera: {fileID: 1161536040}
   modelName: {fileID: 1729913692}
   descriptionText: {fileID: 1339567638}
   categoryText: {fileID: 1773820153}
