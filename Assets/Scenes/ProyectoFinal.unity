@@ -469,6 +469,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &335595551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 335595553}
+  - component: {fileID: 335595552}
+  m_Layer: 0
+  m_Name: Multiple Image Tracking Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &335595552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335595551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2267c1e8766614ebadec081775131b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prueba
+  imageManager: {fileID: 892464856}
+  imagePrefabs:
+  - imageName: Cryo Abyss Mage
+    imagePrefab: {fileID: 2569935233548413428, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
+  - imageName: Electro Samachurl
+    imagePrefab: {fileID: 425006655399927484, guid: b01718883e61bc94faa50903fa977828, type: 3}
+  - imageName: Pyro Hilichurl
+    imagePrefab: {fileID: 4564635811893554541, guid: 1a177dec6e3e367428cc0f99dbbe646c, type: 3}
+  - imageName: Tepetlisaur
+    imagePrefab: {fileID: 2011236838944595605, guid: 414ebf0447233904fbf820877010dce2, type: 3}
+--- !u!4 &335595553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335595551}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 326.6617, y: 0, z: -446.60687}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453079723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,63 +2350,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1001 &3278471903448799763
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2569935233548413428, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_Name
-      value: CryoAbyssMage
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2149.928
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00000008248446
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 13990.063
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973841691365069467, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 396e6dcc347d3b0419648da9d106f69e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2363,4 +2360,4 @@ SceneRoots:
   - {fileID: 1813713336}
   - {fileID: 453079727}
   - {fileID: 221100152}
-  - {fileID: 3278471903448799763}
+  - {fileID: 335595553}
