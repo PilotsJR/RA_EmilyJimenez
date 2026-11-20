@@ -47,10 +47,10 @@ public class Tarea8_ModelRaycast : MonoBehaviour
         }
     private void ShowInfo(DataModel data)
     {
-        modelName.text = data.name;
-        descriptionText.text = data.description;
-        categoryText.text = data.category;
-        levelText.text = "Nivel: " + data.level;
+        modelName.text = "Name: " + data.name;
+        descriptionText.text = "Description: " + data.description;
+        categoryText.text = "Category: " + data.category;
+        levelText.text = "Level: " + data.level;
         iconImage.sprite = data.icon;
 
         Debug.Log("Objeto seleccionado: " + data);
