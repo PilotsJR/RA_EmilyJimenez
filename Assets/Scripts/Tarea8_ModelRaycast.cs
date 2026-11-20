@@ -6,45 +6,58 @@ using UnityEngine.UI;
 public class Tarea8_ModelRaycast : MonoBehaviour
 {
     [SerializeField] private Camera arCamera;
+    [SerializeField] private GameObject banner;      // Panel/banner que contiene toda la info
+    [SerializeField] private Button closeButton;     // Botón de cerrar
     [SerializeField] private TMP_Text modelName;
     [SerializeField] private TMP_Text descriptionText;
     [SerializeField] private TMP_Text categoryText;
     [SerializeField] private TMP_Text levelText;
     [SerializeField] private Image iconImage;
 
+    private void Awake()
+    {
+        // El banner empieza oculto
+        banner.SetActive(false);
+    }
+
     private void OnEnable()
-        {
-            EnhancedTouchSupport.Enable();
-        }
+    {
+        EnhancedTouchSupport.Enable();
+        closeButton.onClick.AddListener(CloseBanner);
+    }
 
-        private void OnDisable()
-        {
-            EnhancedTouchSupport.Disable();
-        }
+    private void OnDisable()
+    {
+        EnhancedTouchSupport.Disable();
+        closeButton.onClick.RemoveListener(CloseBanner);
+    }
 
-        void Update()
+    void Update()
+    {
+        foreach (var touch in UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches)
         {
-            foreach(var touch in UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches)
+            if (!touch.began)
+                continue;
+
+            // Ignorar toques que caen sobre la UI (por ejemplo, el botón Close)
+            if (UnityEngine.EventSystems.EventSystem.current != null &&
+                UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(touch.finger.index))
+                continue;
+
+            Ray ray = arCamera.ScreenPointToRay(touch.screenPosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                if (!touch.began)
-                    continue;
-
-                Ray ray = arCamera.ScreenPointToRay(touch.screenPosition);
-
-                if(Physics.Raycast(ray, out RaycastHit hit))
-                {
-
                 InfoModel modelInfo = hit.collider.GetComponent<InfoModel>();
 
-                    if(modelInfo !=null && modelInfo.Data != null)
-                    {
-
+                if (modelInfo != null && modelInfo.Data != null)
+                {
                     ShowInfo(modelInfo.Data);
-                       //modelName.text = modelInfo.ModelName;
-                    }
                 }
             }
         }
+    }
+
     private void ShowInfo(DataModel data)
     {
         modelName.text = "Name: " + data.name;
@@ -53,10 +66,13 @@ public class Tarea8_ModelRaycast : MonoBehaviour
         levelText.text = "Level: " + data.level;
         iconImage.sprite = data.icon;
 
-        Debug.Log("Objeto seleccionado: " + data);
+        banner.SetActive(true);
+
+        Debug.Log("Objeto seleccionado: " + data.name);
+    }
+
+    private void CloseBanner()
+    {
+        banner.SetActive(false);
     }
 }
-
-
-
-
